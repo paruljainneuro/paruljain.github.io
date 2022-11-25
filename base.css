@@ -1,0 +1,138 @@
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  padding: 0;
+  font: sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+/* h1 */
+h1 {
+  font-size: 24px;
+}
+
+/* h2 */
+h2 {
+  font-size: 22px;
+}
+
+/* h3 */
+h3 {
+  font-size: 20px;
+}
+
+/* h4 */
+h4 {
+  font-size: 18px;
+}
+
+/**
+ * Links
+ */
+a {
+  color: darkblue;
+  text-decoration: none; }
+  a:visited {
+    color: blueviolet; }
+  a:hover {
+    color: #111;
+    text-decoration: underline; }
+  .footer a {
+    color: white;
+  }
+  .footer a:hover {
+    text-decoration: underline; }
+  .footer a:visited {
+    color: goldenrod;
+  }
+
+/* Image */
+img {
+  object-fit: cover;
+}
+
+/* Object */
+object {
+  width: 100%;
+  height: 500px;
+  outline: none;
+  object-fit: contain;
+}
+  object[name="cv"] {
+      height: 800px;
+  }
+
+ /* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f1f1f1;
+  position: fixed;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #046DAA;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #046DAA;
+  color: white;
+  text-align: center;
+}
+a [name="footer"]{
+  color: white;
+}
+a:visited [name="footer"]{
+  color: lightgoldenrodyellow;
+}
