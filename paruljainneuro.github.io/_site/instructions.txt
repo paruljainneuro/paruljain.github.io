@@ -1,0 +1,11 @@
+Formatting
+base.css
+
+Sidebar content
+_data/sitemap.yml
+
+Pages linked to sidebar
+<page>.md
+
+Sidebar and Footer activation
+_layouts/myDefault.html

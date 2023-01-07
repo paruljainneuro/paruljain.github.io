@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="base.css">
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+    <div class="sidebar">
+        {% for item in site.data.sitemap.docs %}
+        {% if item.url == page.url %}
+          <a class="active" href="{{ item.url }}">{{ item.title }}</a>
+        {% else %}
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {{ content }}
+    <div class="footer">
+      <p><a href="mailto:paj3001@med.cornell.edu">Email</a> &emsp;
+      <a href="https://twitter.com/jainparul321">Twitter</a> &emsp;
+      <a href="https://github.com/paruljainneuro">Github</a></p>
+    </div>
+  </body>
+</html>
