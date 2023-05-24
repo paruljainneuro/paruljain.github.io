@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Parul Jain
-email: paj3001@med.cornell.edu
+email: parul.jain@mssm.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  PhD candidiate in PBSB, WCGS
+  Postdoctoral Associate, Schiller Lab, Icahn School of Medicine at Mount Sinai
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jainparul321
-github_username:  paj3001
+github_username:  paruljainneuro
 
 # Build settings
 markdown: kramdown
